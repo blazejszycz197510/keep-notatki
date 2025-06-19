@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: keep-notatki
+    name: keep-notatki-sqlite
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python app.py"
+    startCommand: "python app_sqlite.py"
     plan: free
     envVars:
       - key: PYTHON_VERSION
